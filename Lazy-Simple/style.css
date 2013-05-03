@@ -1,0 +1,152 @@
+?/*
+Theme Name: Lazy-Simple
+Theme URI: http://lazynight.me/
+Description: BY Lazynight
+Version:1.0
+Tags: 一栏,透明,AJAX,JQ
+author: 夜阑
+author URI: http://lazynight.me/
+License: All Rights Reserved
+*/
+
+*			{margin:0;padding:0;}
+h1			{font-size:24px;line-height:30px;}
+h2			{font-size:20px;line-height:26px;}
+h3			{font-size:16px;line-height:24px;}
+h1 a {text-decoration:none; color:#003D79;}
+h2 a {color:#003D79;}
+h3 a {color:#003D79;}
+h1 a:hover {text-decoration: none;}
+h1,h2,h3,h4,h5,h6 {clear:both;}
+
+a,a:link,a:visited	{color:#fff;text-decoration:none;}
+a:hover				{text-shadow: 0 0 5px #0C6;}
+
+img			{border:0 none;}
+ul,ol	{list-style:none;}
+.textcenter	{text-align:center;}
+
+
+li {list-style:square; margin:0.5em 0 0 2em;}
+dt {margin:1em 0; font-weight:bold;}
+dd {margin:0 1em; padding-left:1em; border-left:1px solid #ddd;}
+th, td {padding:0.5em; border:1px solid #ddd;}
+blockquote {margin:0 1em; padding-left:1em; border-left:1px solid #ddd;}
+pre {font-family:monospace; background:#f8f8ff; padding:0.5em; overflow:auto;}
+sup, sub {height:0; line-height:1; vertical-align:baseline; position:relative; font-size:10px;}
+sup {bottom:1ex;}
+sub {top:0.5ex;}
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+
+body		{text-align:center;background:url(images/bg6.jpg);color:#fff;font-size:16px;font-family:"微软雅黑",Chalkboard,'Comic Sans MS',Tahoma,Verdana,'BitStream vera Sans','黑体',Arial;background-attachment: fixed; }
+
+#container	{width:820px;margin:0 auto ;}
+
+#header		{width:820px;text-align:center;}
+
+
+
+.nav 		{margin-top:20px;margin: 0 auto;margin-top:10px;}
+.nav li		{list-style:none;display:inline;}
+#title		{font-size:25px;margin-top:30px;text-shadow:2px 2px 2px #fff;font-weight: bold;_background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="logo.png" ,sizingMethod="crop");  }
+#dsc		{}
+#content	{text-align:left;width:820px;margin-top:30px;  filter: Alpha(opacity=70);opacity: 0.8; background-color: #000;padding:20px 20px 50px 20px;border-radius:5px;}
+
+
+.postname  {height:40px; border-bottom: 1px dotted #ccc ;padding:0 0 0 10px ;display: block;margin-top:20px;}
+.postname a	{float: left;}
+.postname span {float: right; padding-right: 15px;}
+.postdetails  {display:none;float:right;display:inline;}
+.postcontent {margin-left:19px;border-bottom: 1px dotted #CCC;padding: 20px;}
+.postcontent img{border-radius:5px;max-width:100%;max-height:100%;}
+.trail	{}
+.trail li	{overflow:hidden;margin:0;list-style:none;display:inline;}
+.tag	{overflow:hidden;display:inline;}
+.navigator span {float:right;}
+.entry		{padding-bottom:20px;padding-top:20px;letter-spacing:0px;word-break : break-all;line-height: 2;border-bottom:1px dotted;}
+.entry img{border-radius:5px;max-width:100%;max-height:80%;}
+.alignleft	{float:left;margin-top:10px;margin-bottom:10px;}
+.alignright	{float:right;margin-top:10px;margin-bottom:10px;}
+.share		{text-align:center;width:730px;float:left;margin-bottom:10px;clear:both;}
+.share li 	{display:inline;list-style:none;margin:0.5em 0 0 1.5em;}
+
+.author-head{margin:10px;}
+.author-des	{margin-top:-110px;margin-bottom:60px;margin-left:250px;}
+.author-link{margin-top:-40px;margin-bottom:60px;margin-left:250px;clear:both;}
+.querypost	{margin-bottom:20px;}
+.querypost-left{float:left; width:45%;margin-bottom:20px;}
+.querypost-right{float:right; width:45%;margin-bottom:20px;}
+.querypost-left li{list-style:none;}
+.querypost-right li{list-style:none;}
+
+#pagenavi	{margin:30px 0;}
+.pagenavi		{width:710px;float:left;position:relative;}
+.page-numbers      {border-radius:10px;width:30px;height:30px;border:1px dotted;margin:0 5px;padding:5px 8px 4px}
+.page-numbers:hover			{text-shadow: 0 10px 5px #0cc;color:#0cc}
+.page-pagenavi,.pagenavi	{padding:24px 0;text-align:center;}
+.page-pagenavi .current,.pagenavi .current{color:#ff3a00;}
+
+#comments	{border-bottom:1px dotted ;padding-bottom:20px;}
+#author		{width:280px;height:25px;margin-bottom:5px;}
+#author:focus	{outline:none;border:2px solid #1ba1e2;}
+#email		{width:280px;height:20px;margin-bottom:5px;}
+#email:focus	{outline:none;border:2px solid #1ba1e2;}
+#url		{width:280px;height:25px;margin-bottom:5px;}
+#url:focus	{outline:none;border:2px solid #1ba1e2;}
+#comment	{width:350px;height:200px;margin-bottom:5px;}
+#comment:focus	{outline:none;border:2px solid #1ba1e2;}
+#submit		{font-size:30px;border-radius:30px;width:60px;height:60px;border:5px solid #1ba1e2;-moz-border-radius: 20px;  -webkit-border-radius: 20px;margin-left:10px; }
+
+
+.commentlist li{list-style:none;padding-top:5px;}
+div.vcard{border-bottom:1px solid #1ba1e2;padding-bottom:10px;}
+cite.fn	{font-style:normal;}
+.comment-meta	{text-align:right;margin:-30px 60px 25px 0;}
+.comment-author  img.avatar{border-radius:5px;left: 0px;
+width:30px;height:30px;margin-bottom:-10px;}
+.reply	{text-align:right;margin:-67px 0 70px 0 ;}
+#commentform p {margin:20px 0 20px 0;}
+
+
+#switch		{clear:both;border-radius:7px;width:14px;height:14px;border:1px solid;margin-left:20px;margin-bottom:20px;margin-top:20px;}
+.widget		{text-align:left;overflow:hidden;}
+.widget h3	{color:#fff;padding-left:20px;border-bottom:1px dotted ;}
+.widget ul{margin-bottom:20px;margin-top:10px;}
+.widget li{width:20%;height:22px;float:left;overflow:hidden;margin-bottom:20px;}
+#rss		{position:relative;bottom:10px;right:0;}
+#search		{margin-bottom:10px;margin-left:-600px;}
+#s			{border:1px dotted ;border-radius:10px;-webkit-transition-duration: 400ms;width: 120px;height:20px;
+-webkit-transition-property: width, background;
+-webkit-transition-timing-function: ease;
+-moz-transition-duration: 400ms;
+-moz-transition-property: width, background;
+-moz-transition-timing-function: ease;
+-o-transition-duration: 400ms;
+-o-transition-property: width, background;
+-o-transition-timing-function: ease;
+}
+#s:hover	{border:1px solid #ccc;border-radius:10px;}
+#s:focus	{outline:none;width:190px;border:1px solid #1ba1e2;border-radius:10px;}
+#shangxia{position:absolute;top:45%;left:50%;display:block;margin-left:-430px;}
+#shang{ background:url(images/huadong.gif) -34px 0 no-repeat;
+ cursor:pointer;
+ height:32px;
+ margin:10px 0;
+ position:relative;
+ width:32px;}
+#comt{background:url(images/huadong.gif) no-repeat;
+ cursor:pointer;
+ height:32px;
+ margin:10px 0;
+ position:relative;
+ width:32px;}
+#xia{background:url(images/huadong.gif) -68px 0 no-repeat;
+ cursor:pointer;
+ height:32px;
+ margin:10px 0;
+ position:relative;
+ width:32px;}
+#footer		{width:100%;border-bottom:5px solid #ccc;padding-bottom:10px;margin-top:10px;padding:20px;}
+
